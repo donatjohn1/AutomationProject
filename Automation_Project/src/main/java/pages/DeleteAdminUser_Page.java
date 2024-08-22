@@ -12,7 +12,7 @@ public class DeleteAdminUser_Page {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']")WebElement adminUserPageLink;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']//i[@class='fas fa-arrow-circle-right']")WebElement adminUserPageLink;
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[15]/td[5]//i[@class='fas fa-trash-alt']")WebElement deleteAdminUserButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
 	public void openAdminUserPage()

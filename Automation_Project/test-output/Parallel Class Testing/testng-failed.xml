@@ -6,27 +6,16 @@
   </listeners>
   <test thread-count="2" parallel="classes" name="parallelTest(failed)">
     <parameter name="User Name" value="admin"/>
+    <parameter name="browser" value="Chrome"/>
     <parameter name="Password" value="admin"/>
     <classes>
       <class name="testScript.DeleteAdminUser_Test">
         <methods>
-          <include name="verifyUserIsAbleToDeleteUserFromList"/>
+          <include name="verifyUserIsAbleToDeleteUserFromList" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
           <include name="afterMethod"/>
-          <include name="f"/>
         </methods>
       </class> <!-- testScript.DeleteAdminUser_Test -->
-      <class name="testScript.LoginPage_Test">
-        <methods>
-          <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword"/>
-          <include name="initialiseBrowser"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials"/>
-          <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToLoginUsinginvalidcredentials"/>
-          <include name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword"/>
-          <include name="f"/>
-        </methods>
-      </class> <!-- testScript.LoginPage_Test -->
     </classes>
   </test> <!-- parallelTest(failed) -->
 </suite> <!-- Failed suite [Parallel Class Testing] -->
