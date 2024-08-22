@@ -8,11 +8,19 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<parameter name="User Name" value="admin"></parameter>
 		<parameter name="Password" value="admin"></parameter>
+		<parameter name="Invalid User Name" value="admin3456789"></parameter>
+		
+		<groups>
+			<run>
+				<include name="Smoke testing"></include>
+			</run>
+		</groups>
 		<classes>
 			<class name="testScript.LoginPage_Test">
 			<methods>
 				<include name="verifyUserIsAbleToLoginUsingValidCredentials">
 				</include>
+				<include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword"></include>
 			</methods>
 			</class>
 		</classes>

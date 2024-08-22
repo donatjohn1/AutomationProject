@@ -29,9 +29,12 @@ public class LoginPage_Test extends Base {
 	  assertTrue(isHomePageIsLoaded,Constants.ERRORMSGFORLOGIN);
   }
 	  @Test(groups= {"Smoke testing"})
-	  public void verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword() throws IOException {
-		  String userNameValue=ExcelUtilities.getStringData(2,0,"Login_Page");
-		  String passwordValue=ExcelUtilities.getStringData(2,1,"Login_Page");
+	  @Parameters({"Invalid User Name","Password"})
+	  public void verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(String userNameValue,String passwordValue) throws IOException {
+		  //String userNameValue="4567admin";
+		  //String passwordValue="admin";
+		  //String userNameValue=ExcelUtilities.getStringData(2,0,"Login_Page");
+		  //String passwordValue=ExcelUtilities.getStringData(2,1,"Login_Page");
 		  Login_Page loginPage=new Login_Page(driver);
 		  loginPage.enterUserNameField(userNameValue);
 		  loginPage.enterPasswordField(passwordValue);

@@ -5,15 +5,19 @@
     <listener class-name="generateTestReport.Listeners"/>
   </listeners>
   <test thread-count="5" name="Chrome Test(failed)">
-    <parameter name="User Name" value="2345678yhn"/>
+    <parameter name="User Name" value="admin"/>
     <parameter name="browser" value="Chrome"/>
     <parameter name="Password" value="admin"/>
+    <groups>
+      <run>
+        <include name="Smoke testing"/>
+      </run>
+    </groups>
     <classes>
       <class name="testScript.LoginPage_Test">
         <methods>
+          <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials" invocation-numbers="0 0 0"/>
-          <include name="afterMethod"/>
         </methods>
       </class> <!-- testScript.LoginPage_Test -->
     </classes>

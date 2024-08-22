@@ -27,7 +27,7 @@ public class Base {
   @Test
   public void f() {
   }
-  @BeforeMethod
+  @BeforeMethod(alwaysRun=true)
   @Parameters("browser")
   public void initialiseBrowser(String browser) throws Exception {
 	  //driver=new ChromeDriver();

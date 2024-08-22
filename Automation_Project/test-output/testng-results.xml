@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T11:20:21 IST" name="Cross Browser Testing" finished-at="2024-08-22T11:20:30 IST" duration-ms="8968">
+  <suite started-at="2024-08-22T12:18:39 IST" name="Grouping" finished-at="2024-08-22T12:18:42 IST" duration-ms="2782">
     <groups>
+      <group name="Smoke testing">
+        <method signature="LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@55cb6996]" name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" class="testScript.LoginPage_Test"/>
+      </group> <!-- Smoke testing -->
     </groups>
-    <test started-at="2024-08-22T11:20:21 IST" name="Chrome Test" finished-at="2024-08-22T11:20:25 IST" duration-ms="3726">
+    <test started-at="2024-08-22T12:18:39 IST" name="Grouping.xml" finished-at="2024-08-22T12:18:42 IST" duration-ms="2782">
       <class name="testScript.LoginPage_Test">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6e535154]" started-at="2024-08-22T11:20:21 IST" name="initialiseBrowser" finished-at="2024-08-22T11:20:24 IST" duration-ms="2715" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@55cb6996]" started-at="2024-08-22T12:18:39 IST" name="initialiseBrowser" finished-at="2024-08-22T12:18:42 IST" duration-ms="2389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +21,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6e535154]" started-at="2024-08-22T11:20:24 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-22T11:20:25 IST" duration-ms="967" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@55cb6996]" started-at="2024-08-22T12:18:42 IST" name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" finished-at="2024-08-22T12:18:42 IST" duration-ms="362" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[2345678]]>
               </value>
             </param>
             <param index="1">
@@ -33,61 +36,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.LoginPage_Test@6e535154]" started-at="2024-08-22T11:20:25 IST" name="afterMethod" finished-at="2024-08-22T11:20:25 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6e535154] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
+        </test-method> <!-- verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword -->
       </class> <!-- testScript.LoginPage_Test -->
-    </test> <!-- Chrome Test -->
-    <test started-at="2024-08-22T11:20:25 IST" name="Edge Test" finished-at="2024-08-22T11:20:30 IST" duration-ms="4868">
-      <class name="testScript.LoginPage_Test">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7486b455]" started-at="2024-08-22T11:20:25 IST" name="initialiseBrowser" finished-at="2024-08-22T11:20:29 IST" duration-ms="4225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7486b455]" started-at="2024-08-22T11:20:29 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-22T11:20:30 IST" duration-ms="639" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.LoginPage_Test@7486b455]" started-at="2024-08-22T11:20:30 IST" name="afterMethod" finished-at="2024-08-22T11:20:30 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7486b455] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testScript.LoginPage_Test -->
-    </test> <!-- Edge Test -->
-  </suite> <!-- Cross Browser Testing -->
+    </test> <!-- Grouping.xml -->
+  </suite> <!-- Grouping -->
 </testng-results>
