@@ -4,17 +4,9 @@
 	<listeners>
 		<listener class-name="generateTestReport.Listeners" />
 	</listeners>
+	<parameter name="browser" value="Chrome"></parameter>
 	<parameter name="User Name" value="admin"></parameter>
 	<parameter name="Password" value="admin"></parameter>
-	<parameter name="New User Name" value="Dona"></parameter>
-	<parameter name="New Password" value="Dona@123"></parameter>
-	<parameter name="User Type" value="Admin"></parameter>
-	<parameter name="Search Product" value="Electronics"></parameter>
-	<parameter name="Edit Name" value="Saju"></parameter>
-	<parameter name="Search UserName" value="Dona"></parameter>
-	<parameter name="Search UserType" value="Admin"></parameter>
-	<parameter name="Catagory" value="Fruits"></parameter>
-	<parameter name="New SubCatagory" value="GreenApple"></parameter>
 	<test thread-count="5" name="TestngFile">
 		<classes>
 			<class name="testScript.LoginPage_Test">

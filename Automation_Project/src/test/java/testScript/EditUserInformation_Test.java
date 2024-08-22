@@ -14,8 +14,8 @@ import utilities.ExcelUtilities;
 
 public class EditUserInformation_Test extends Base{
   @Test(description="verifyUserIsAbleToEditUserInformation")
-  @Parameters({"User Name","Password","Edit Name"})
-  public void verifyUserIsAbleToEditUserInformation(String userNameValue,String passwordValue,String newUserNameValue) throws IOException {
+  @Parameters({"User Name","Password"})
+  public void verifyUserIsAbleToEditUserInformation(String userNameValue,String passwordValue) throws IOException {
 	  Login_Page loginPage=new Login_Page(driver);
 	  loginPage.enterUserNameField(userNameValue);
 	  loginPage.enterPasswordField(passwordValue);
@@ -23,7 +23,7 @@ public class EditUserInformation_Test extends Base{
 	  EditUserInformation_Page editUser=new EditUserInformation_Page(driver);
 	  editUser.openAdminUserPage();
 	  editUser.clickEditUserInformationButton();
-	  //String newUserNameValue=ExcelUtilities.getStringData(1,0,"EditUser");
+	  String newUserNameValue=ExcelUtilities.getStringData(1,0,"EditUser");
 	  String newPasswordValue=ExcelUtilities.getStringData(1,1,"EditUser");
 	  String newUserTypeValue=ExcelUtilities.getStringData(1,2,"EditUser");
 	  editUser.enterEditUserNameField(newUserNameValue);

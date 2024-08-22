@@ -5,6 +5,7 @@
 		<listener class-name="generateTestReport.Listeners" />
 	</listeners>
 	<test name="parallelTest">
+		<parameter name="browser" value="Chrome"></parameter>
 		<parameter name="User Name" value="admin"></parameter>
 		<parameter name="Password" value="admin"></parameter>
 		<classes>

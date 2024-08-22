@@ -14,8 +14,8 @@ import utilities.ExcelUtilities;
 
 public class AddNewSubCategory_Test extends Base {
   @Test(description="Verify user able to add new sub category")
-  @Parameters({"User Name","Password","Catagory","New SubCatagory"})
-  public void verifyUserIsAbleToAddNewSubCatagory(String userNameValue,String passwordValue,String categoryValue,String subCatagoryValue) throws IOException {
+  @Parameters({"User Name","Password"})
+  public void verifyUserIsAbleToAddNewSubCatagory(String userNameValue,String passwordValue) throws IOException {
 	  Login_Page loginPage=new Login_Page(driver);
 	  loginPage.enterUserNameField(userNameValue);
 	  loginPage.enterPasswordField(passwordValue);
@@ -23,12 +23,12 @@ public class AddNewSubCategory_Test extends Base {
 	  AddNewSubCategory_Page subCategory=new AddNewSubCategory_Page(driver);
 	  subCategory.openSubCatagoryPage();
 	  subCategory.clickAddNewSubCatagoryButton();
-	  //String categoryValue=ExcelUtilities.getStringData(1,0,"AddNewSubCategory");
-	  //String subCatagoryValue=ExcelUtilities.getStringData(1,1,"AddNewSubCategory");
-	  String fileLocationValue=ExcelUtilities.getStringData(1, 2,"AddNewSubCategory");
+	  String categoryValue=ExcelUtilities.getStringData(1,0,"AddNewSubCategory");
+	  String subCatagoryValue=ExcelUtilities.getStringData(1,1,"AddNewSubCategory");
+	  //String fileLocationValue=ExcelUtilities.getStringData(1, 2,"AddNewSubCategory");
 	  subCategory.selectCatagoryValue(categoryValue);
 	  subCategory.enterSubCatagory(subCatagoryValue);
-	  subCategory.uploadImgFile1(fileLocationValue);
+	  //subCategory.uploadImgFile1(fileLocationValue);
 	  subCategory.saveNewSubCatagory();
 	  boolean isAlertDisplayed=subCategory.isAlertDisplayed();
 	  assertTrue(isAlertDisplayed,Constants.ALERTMSGFORNEWSUBCATEGORYADDED);
