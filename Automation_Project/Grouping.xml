@@ -15,9 +15,6 @@
 		</groups>
 		<classes>
 			<class name="testScript.LoginPage_Test">
-				<methods>
-				<include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword"></include>
-			</methods>
 			</class>
 		</classes>
 	</test> <!--
