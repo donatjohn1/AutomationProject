@@ -5,8 +5,10 @@
     <listener class-name="generateTestReport.Listeners"/>
   </listeners>
   <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="Invalid User Name" value="admin3456789"/>
     <parameter name="User Name" value="admin"/>
     <parameter name="browser" value="Chrome"/>
+    <parameter name="InvalidPassword" value="DTJ12345678"/>
     <parameter name="Password" value="admin"/>
     <groups>
       <run>
@@ -18,6 +20,7 @@
         <methods>
           <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
+          <include name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword"/>
         </methods>
       </class> <!-- testScript.LoginPage_Test -->
     </classes>

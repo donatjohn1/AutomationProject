@@ -17,7 +17,7 @@ public class NewAdminUser_Page {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']")WebElement adminUserPageLink;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']//i[@class='fas fa-arrow-circle-right']")WebElement adminUserPageLink;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement addNewAdminUserButton;
 	@FindBy(xpath="//input[@id='username']")WebElement newUserNameField;
 	@FindBy(xpath="//input[@id='password']")WebElement newPasswordField;

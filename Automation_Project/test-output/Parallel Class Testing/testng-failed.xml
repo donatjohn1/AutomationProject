@@ -9,13 +9,13 @@
     <parameter name="browser" value="Chrome"/>
     <parameter name="Password" value="admin"/>
     <classes>
-      <class name="testScript.DeleteAdminUser_Test">
+      <class name="testScript.LoginPage_Test">
         <methods>
-          <include name="verifyUserIsAbleToDeleteUserFromList" invocation-numbers="0"/>
+          <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testScript.DeleteAdminUser_Test -->
+      </class> <!-- testScript.LoginPage_Test -->
     </classes>
   </test> <!-- parallelTest(failed) -->
 </suite> <!-- Failed suite [Parallel Class Testing] -->
